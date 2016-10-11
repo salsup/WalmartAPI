@@ -1,0 +1,9 @@
+c:\users\salsu\documents\visual studio 2015\Projects\WMNotifications\WMNotifications\bin\Debug\WMNotifications.exe.config
+c:\users\salsu\documents\visual studio 2015\Projects\WMNotifications\WMNotifications\bin\Debug\WMNotifications.exe
+c:\users\salsu\documents\visual studio 2015\Projects\WMNotifications\WMNotifications\bin\Debug\WMNotifications.pdb
+c:\users\salsu\documents\visual studio 2015\Projects\WMNotifications\WMNotifications\obj\Debug\WMNotifications.csprojResolveAssemblyReference.cache
+c:\users\salsu\documents\visual studio 2015\Projects\WMNotifications\WMNotifications\obj\Debug\WMNotifications.exe
+c:\users\salsu\documents\visual studio 2015\Projects\WMNotifications\WMNotifications\obj\Debug\WMNotifications.pdb
+C:\Users\salsu\Documents\Visual Studio 2015\Projects\WMNotifications\WMNotifications\bin\Debug\Resource\wm.jar
+C:\Users\salsu\Documents\Visual Studio 2015\Projects\WMNotifications\WMNotifications\bin\Debug\Newtonsoft.Json.dll
+C:\Users\salsu\Documents\Visual Studio 2015\Projects\WMNotifications\WMNotifications\bin\Debug\Newtonsoft.Json.xml

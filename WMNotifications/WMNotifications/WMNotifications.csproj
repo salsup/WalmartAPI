@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EA21192C-3183-4BCF-B493-18AFC614450C}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WMNotifications</RootNamespace>
+    <AssemblyName>WMNotifications</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Models\orders\PurchaseOrderV2.cs" />
+    <Compile Include="Models\orders\WMOrder.cs" />
+    <Compile Include="Models\WMCredentials.cs" />
+    <Compile Include="Models\WMEncryption.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utility\SecurityHelper.cs" />
+    <Compile Include="Utility\WebrequestHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <None Include="XSDs\V2\inventory\Inventory.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XSDs\V2\inventory\InventoryFeed.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XSDs\V2\inventory\InventoryHeader.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XSDs\V2\mp\Animal.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XSDs\V2\mp\ArtAndCraft.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XSDs\V2\mp\Baby.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XSDs\V2\mp\CarriersAndAccessories.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XSDs\V2\mp\Clothing.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XSDs\V2\mp\Electronics.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XSDs\V2\mp\FeedAcknowledgement.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XSDs\V2\mp\FeedCommons.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XSDs\V2\mp\FeedHeader.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XSDs\V2\mp\FeedRecordResponse.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XSDs\V2\mp\FeedResponse.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XSDs\V2\mp\FoodAndBeverage.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XSDs\V2\mp\Footwear.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XSDs\V2\mp\Furniture.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XSDs\V2\mp\GardenAndPatio.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XSDs\V2\mp\HealthAndBeauty.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XSDs\V2\mp\Home.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XSDs\V2\mp\InventoryFeedResponse.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XSDs\V2\mp\ItemFeedResponse.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XSDs\V2\mp\Jewelry.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XSDs\V2\mp\Media.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XSDs\V2\mp\MPItem.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XSDs\V2\mp\MPItemCommons.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XSDs\V2\mp\MPItemFeed.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XSDs\V2\mp\MPItemFeedHeader.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XSDs\V2\mp\MPItemFeedResponse.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XSDs\V2\mp\MPItemPrice.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XSDs\V2\mp\MPItemRetire.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XSDs\V2\mp\MPItemShippingOverrides.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XSDs\V2\mp\MPItemUpdate.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XSDs\V2\mp\MPItemView.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XSDs\V2\mp\MPItemViews.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XSDs\V2\mp\MPProduct.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XSDs\V2\mp\MPProductCommons.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XSDs\V2\mp\MPProductUpdate.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XSDs\V2\mp\MusicalInstrument.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XSDs\V2\mp\OccasionAndSeasonal.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XSDs\V2\mp\OfferEnvelope.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XSDs\V2\mp\Office.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XSDs\V2\mp\Other.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XSDs\V2\mp\PartnerFeedResponse.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XSDs\V2\mp\Photography.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XSDs\V2\mp\ProductEnvelope.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XSDs\V2\mp\ServiceResponse.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XSDs\V2\mp\SportAndRecreation.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XSDs\V2\mp\ToolsAndHardware.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XSDs\V2\mp\Toy.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XSDs\V2\mp\Vehicle.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XSDs\V2\mp\Watches.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XSDs\V2\orders\CancelRequestV2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XSDs\V2\orders\CommonComponentsV2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XSDs\V2\orders\PurchaseOrderV2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XSDs\V2\orders\RefundRequestV2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XSDs\V2\orders\ShipConfirmRequestV2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XSDs\V2\prices\BulkPriceFeed.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XSDs\V2\responses\Errors.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XSDs\V2\responses\FeedAcknowledgement1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XSDs\V2\responses\FeedCommons.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XSDs\V2\responses\FeedRecordResponse.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XSDs\V2\responses\ItemFeedResponse.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XSDs\V2\responses\ItemPriceResponse.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XSDs\V2\responses\ItemRetireResponse.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XSDs\V2\responses\ItemStatusDetail.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XSDs\V2\responses\PartnerFeedResponse.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XSDs\V2\responses\ResponseCommon.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resource\wm.jar">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
