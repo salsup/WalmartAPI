@@ -7,3 +7,6 @@ c:\users\salsu\documents\visual studio 2015\Projects\WMNotifications\WMNotificat
 C:\Users\salsu\Documents\Visual Studio 2015\Projects\WMNotifications\WMNotifications\bin\Debug\Resource\wm.jar
 C:\Users\salsu\Documents\Visual Studio 2015\Projects\WMNotifications\WMNotifications\bin\Debug\Newtonsoft.Json.dll
 C:\Users\salsu\Documents\Visual Studio 2015\Projects\WMNotifications\WMNotifications\bin\Debug\Newtonsoft.Json.xml
+C:\Projects\WalmartAPI\WMNotifications\WMNotifications\bin\Debug\WMNotifications.exe.config
+C:\Projects\WalmartAPI\WMNotifications\WMNotifications\obj\Debug\WMNotifications.exe
+C:\Projects\WalmartAPI\WMNotifications\WMNotifications\obj\Debug\WMNotifications.pdb
